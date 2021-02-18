@@ -15,6 +15,9 @@ gem "puma", "~> 5.2"
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker"
 
+# Wizard Steps gem for GovUK multi part forms
+gem 'wizard_steps'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
