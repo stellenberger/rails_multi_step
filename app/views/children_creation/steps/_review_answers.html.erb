@@ -1,0 +1,15 @@
+<h1 class="govuk-heading-xl">Check this is the child you want to find a foster family for?</h1>
+
+<%= render GovukComponent::SummaryList.new do |component| %>
+  <% f.object.answers_by_step.each do |step, answers| %>
+    <% answers.each do |answer| %>
+      <% component.slot(
+           :row,
+           key: t("answers.#{step.key}.#{answer.first}"),
+           value: format_answer(answer.last),
+           action: govuk_link_to("Change", children_creation_step_path(step.key)),
+         )
+      %>
+    <% end %>
+  <% end %>
+<% end %>

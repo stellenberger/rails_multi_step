@@ -12,6 +12,8 @@ Then you must run
 
 ```
 gem install --local local_path_to_gem/wizard_steps/pkg/wizard_steps-0.1.0.gem
+
+gem install --local ../../wizard_steps/pkg/wizard_steps-0.1.0.gem
 ```
 NOTE: Please change the local_path_to with wherever you have cloned it from, from this repo. 
 

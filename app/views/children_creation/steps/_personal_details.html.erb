@@ -1,0 +1,18 @@
+<h1 class="govuk-heading-xl">Enter a child's details</h1>
+
+<p>
+  This service uses surname and date of birth to identify a child for foster family matching purposes only.
+</p>
+
+<p>
+  Any child profiles you may need to share will not include a child’s surname or date of birth.
+</p>
+
+<%= f.govuk_fieldset legend: { text: "Name" } do %>
+  <%= f.govuk_text_field :first_name %>
+  <%= f.govuk_text_field :last_name %>
+<% end %>
+
+<%= f.govuk_date_field :date_of_birth, date_of_birth: true %>
+
+<%= f.govuk_collection_radio_buttons :gender, Child.genders.keys.map { |g| [g, I18n.t(g, scope: "enums.gender")] }, :first, :second %>
