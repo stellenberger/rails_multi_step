@@ -16,6 +16,7 @@ Firstly, there is a pre-requisite of knowing what a multi-step form is if you do
 
 To use this gem, you will need to register your steps in a wizard.rb file, located at the base of your multi step folder. Take the following file structure below as an example for a model to create a user
 
+```
 |models
 |__user_creation
 |  |__steps
@@ -24,7 +25,7 @@ To use this gem, you will need to register your steps in a wizard.rb file, locat
 |  |  |__register_gender.rb
 |  |  |__review_answers.rb
 |  |__wizard.rb  <--- register your steps here
-
+```
 For the above example with four steps and a User class, lets have a look at what the wizard.rb could look like: 
 
 ```
@@ -112,9 +113,11 @@ Lets move onto the controller.
 
 Your controller layour should be something like the following: 
 
+```
 |controllers
 |__user_creation
 |  |__steps_controller.rb
+```
 
 Yep, its that simple.
 
@@ -147,6 +150,7 @@ Inside the module for your steps, you can see it follows a general controller la
 
 And the views; 
 
+```
 |views
 |__user_creation
 |  |__ _register_name.html.erb
@@ -154,6 +158,7 @@ And the views;
 |  |__ _register_gender.html.erb
 |  |__ _review_answers.html.erb
 |  |__show.html.erb
+```
 
 ```
 # app/views/user_creation/_register_name.html.erb
