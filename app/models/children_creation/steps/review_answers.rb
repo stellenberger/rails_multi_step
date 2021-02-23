@@ -1,4 +1,4 @@
-#require 'wizard_steps/step'
+require 'wizard_steps/step'
 
 module ChildrenCreation
   module Steps

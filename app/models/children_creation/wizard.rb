@@ -1,4 +1,4 @@
-#require 'wizard_steps/base'
+require 'wizard_steps/base'
 
 module ChildrenCreation
   class Wizard < WizardSteps::Base
