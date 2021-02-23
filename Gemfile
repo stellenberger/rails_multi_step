@@ -16,7 +16,7 @@ gem "puma", "~> 5.2"
 gem "webpacker"
 
 # Wizard Steps gem for GovUK multi part forms
-gem 'wizard_steps'
+gem 'wizard_steps', "0.1.0", git: "https://github.com/goodviber/wizard_steps.git"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -29,6 +29,10 @@ gem "foreman"
 
 # Canonical meta tag
 gem "canonical-rails"
+
+# frontend
+gem "govuk-components"
+gem "govuk_design_system_formbuilder"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

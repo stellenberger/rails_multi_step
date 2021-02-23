@@ -1,7 +1,7 @@
-require 'wizard_steps/wizard/base'
+#require 'wizard_steps/base'
 
 module ChildrenCreation
-  class Wizard < WizardSteps::Wizard::Base
+  class Wizard < WizardSteps::Base
     self.steps = [
       Steps::PersonalDetails,
       Steps::ReviewAnswers,

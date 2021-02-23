@@ -1,8 +1,8 @@
-require 'wizard_steps/wizard/step'
+#require 'wizard_steps/step'
 
 module ChildrenCreation
   module Steps
-    class PersonalDetails < WizardSteps::Wizard::Step
+    class PersonalDetails < WizardSteps::Step
       include ActiveRecord::AttributeAssignment
 
       attribute :first_name, :string
