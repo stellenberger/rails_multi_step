@@ -16,7 +16,7 @@ gem "puma", "~> 5.2"
 gem "webpacker"
 
 # Wizard Steps gem for GovUK multi part forms
-gem 'wizard_steps', "0.1.0", git: "https://github.com/goodviber/wizard_steps.git"
+gem 'wizard_steps', "0.1.3", git: "https://github.com/goodviber/wizard_steps.git"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
