@@ -1,5 +1,3 @@
-require 'wizard_steps/step'
-
 module ChildrenCreation
   module Steps
     class ReviewAnswers < WizardSteps::Step

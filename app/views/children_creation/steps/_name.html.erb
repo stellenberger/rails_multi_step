@@ -1,0 +1,7 @@
+<h1 class="govuk-heading-xl">Enter name</h1>
+
+<%= f.govuk_fieldset legend: { text: "Name" } do %>
+  <%= f.govuk_text_field :first_name, label: { text: 'First name' } %>
+  <%= f.govuk_text_field :last_name %>
+<% end %>
+

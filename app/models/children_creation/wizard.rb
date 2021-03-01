@@ -3,7 +3,9 @@ require 'wizard_steps/base'
 module ChildrenCreation
   class Wizard < WizardSteps::Base
     self.steps = [
-      Steps::PersonalDetails,
+      Steps::Name,
+      Steps::DateOfBirth,
+      Steps::Gender,
       Steps::ReviewAnswers,
     ].freeze
 

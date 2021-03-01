@@ -1,0 +1,3 @@
+<h1 class="govuk-heading-xl">Enter gender</h1>
+
+<%= f.govuk_collection_radio_buttons :gender, Child.genders.keys.map { |g| [g, I18n.t(g, scope: "enums.gender")] }, :first, :second %>

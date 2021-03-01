@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+  enums:
+    gender:
+      male: "Male"
+      female: "Female"
+      other: "Other gender"
